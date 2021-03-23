@@ -1,0 +1,516 @@
+<?php
+$conn = new mysqli('localhost', 'root', '', 'dashborad');
+
+?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <!-- Favicon-->
+  <link rel="shortcut icon" href="images/layout/favicon.ico">
+  <!-- Bootstrap Css-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- Google Fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&amp;display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300;400;500;600;700&amp;display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Meddon&amp;display=swap" rel="stylesheet">
+  <!-- Font Awesome CSS-->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+  <!-- Fancy Box-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+  <!-- Link Owl Carousel-->
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <!-- Wow JS-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <!-- Style Css-->
+  <link rel="stylesheet" href="css/main.css">
+  <title>SuperFood</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <!-- Start PreLoader-->
+    <div class="preLoader">
+      <div class="preLoader__image"><img src="images/layout/leaf.png" alt=""></div>
+    </div>
+    <!-- End PreLoader-->
+    <!-- Start Header-->
+    <div class="overlay-header"><span class="close-overlay"><i class="fal fa-times"></i></span></div>
+    <div class="header">
+      <div class="container">
+        <div class="header__menu">
+          <div class="header__menu-logo"><a class="header__menu-logo-link" href="index.html"><img
+                src="images/layout/logo.png"></a></div>
+          <div class="accordion-menu">
+            <div class="header__menu-button">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+            </div>
+            <ul class="header__menu-list">
+              <li class="list__item"><a class="list__item-logo" href="index.html"><img src="images/layout/logo.png"></a>
+              </li>
+              <li class="list__item"><a class="list__item-link" href="index.html">Trang chủ</a></li>
+              <li class="list__item"><a class="list__item-link" href="about.html">Giới thiệu</a></li>
+              <li class="list__item"><a class="list__item-link" href="services.html">Dịch vụ</a></li>
+              <li class="list__item"><a class="list__item-link" href="blog.html">Tin tức</a></li>
+              <li class="list__item"><a class="list__item-link" href="contact.html">Liên hệ</a></li>
+              <li class="list__item">
+                <form class="list__item-form">
+                  <input class="form__search" type="search" placeholder="Type your keyword...">
+                  <button class="form__submit" type="submit"><i class="fal fa-search"></i></button>
+                </form>
+              </li>
+            </ul>
+          </div>
+          <div class="header__menu-icon"><a class="icon__search" href="#" data-modal="modals"><i
+                class="far fa-search"></i></a></div>
+        </div>
+      </div>
+    </div>
+    <!-- End Header-->
+    <!-- Start Banner-->
+    <div class="banner animate__animated animate__fadeIn wow">
+      <div class="container">
+        <div class="banner__background"><img src="images/layout/banner.webp" alt=""></div>
+        <div class="banner__content text-center my-auto">
+          <div class="banner__content-title">Tin tức</div>
+          <div class="banner__content-subtitle">Trang Chủ<i class="fal fa-angle-right"></i><span>Tin tức</span></div>
+        </div>
+      </div>
+    </div>
+    <!-- End Banner-->
+    <!-- Start Blog Details-->
+    <div class="blogDetails">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-8 col-xl-9">
+            <div class="blogDetails__content animate__animated animate__zoomIn wow" data-wow-delay="0.5s">
+              <div class="blogDetails__content-title">American Heart Month & heart-healthy local food</div>
+              <div class="blogDetails__content-subtitle"><span class="subtitle__author">By :<a
+                    href="#">John</a></span><span class="subtitle__comment"><a href="#">0</a> comments</span></div>
+              <div class="blogDetails__content-image"><img src="images/blog/blog-2.webp" alt=""></div>
+              <div class="blogDetails__content-text">
+                <p>You have to store fresh vegetables and fruits in order to eat fresh vegetables and fruits — that’s
+                  just a fact of life. Word to the wise: If you don’t store nature’s bounty the right way, you can
+                  undermine the whole reason why you’re making an effort to eat it in the first place. When you eat
+                  fresh local produce, you’re eating the most nutritious, delicious food you can get. It’s picked at the
+                  peak of ripeness shortly before you receive it. But it doesn’t last forever. It’s not like grocery
+                  store produce, which is usually grown far away, picked early for the lengthy trip, and then waxed and
+                  sprayed with preservatives so it will look beautiful and “fresh” for an unnaturally long period time.
+                  Fact is, grocery store produce looks great long after many of the nutrients inside have faded away.
+                  (Read more: Real fresh vs fake fresh) With local food, what you see is what you get. If it looks
+                  fresh, that’s because it really is. The key is to handle and store it right. Now if you’re in a hurry,
+                  skip to the end to get to the bottom line: Our handy dandy cheat sheet that tells you exactly how to
+                  store most local and regional produce items. But if you’ve got a minute, first check out these
+                  additional strategies and background info that will help you get the most out of your fresh veggies
+                  and fruits. 1. Eat fast The longer your produce sits in your fridge or pantry, the more nutrients
+                  slowly disappear. You get good stuff (like perishable enzymes) from fresh food that you can’t get from
+                  anything else, so don’t let your fresh local food go to waste. (Read more: Why you should eat raw food
+                  and keep it on hand) But you don’t have to eat everything all at once! Simply… 2. Prioritize To avoid
+                  wasting produce, prioritize it so you eat it in the right order. Eat the produce with the shortest
+                  life span first, like berries or salad greens or green beans. Once they’re eaten, the more long-lived
+                  produce will be waiting for you, with most of their nutrients still intact. So each week after your
+                  order arrives: Indulge in the DIVAS right away: Berries, broccoli, cherries, green beans, leafy
+                  greens, mushrooms, peaches and plums (if soft and ripe), peas, and sweet corn. Dive into the more
+                  moderate there-for-you BESTIES next — no rush, but don’t wait forever: Cauliflower, cucumbers,
+                  eggplant, grapes, green onions, greens from root veggies, herbs, leeks, peppers, radishes, summer
+                  squashes, and tomatoes. Save the LOW MAINTENANCE BROS for last. Even if you don’t get them eaten
+                  during the week, they can actually kick back and last for a couple weeks, so long as they’re in their
+                  happy place. These include: Apples, Brussels sprouts, cabbage, garlic, onions, pears, potatoes, root
+                  veggies, and winter squashes. Now on to the part where we tell you how to store fresh vegetables and
+                  fruit after your local farmers harvest it for you. 3. QC before you store fresh vegetables & fruits Do
+                  a bit of quality control before you store your food. If there’s one mushy or moldy berry, toss it
+                  right away. A mushy item is a bad influence, and will lead everything that hangs out with it down the
+                  road to ruin. 4. Do wait to wash You should definitely wash your produce to make sure it’s safe to
+                  eat. But wait to wash until right before you eat it or cook it. Until then, leave it in its original
+                  state and handle it as gently and as little as possible. Excess moisture and bruising accelerate decay
+                  and nutrient loss. 5. Do wait to chop or peel Store fresh vegetables and fruits whole. While we love
+                  meal-prepping, if you prep too far in advance, fresh fruits and vegetables lose those precious
+                  nutrients. So hold off on peeling or cutting them up until you’re ready to use them. Peeling and
+                  chopping expose the insides to oxygen and light and that kills nutrients. Once you do slice into
+                  something ahead of time, store it sealed up and in the fridge until it’s time to use it. (Read more: 4
+                  easy ways to max out your produce’s nutritional value) 6. Don’t wait to refrigerate fresh vegetables &
+                  fruits For most fruits and veggies, a cold, dark place slows down decay and the loss of nutrients,
+                  because it inhibits destructive enzymes and the loss of vitamin C. B vitamins are particularly
+                  sensitive to heat and light. There are exceptions — namely citrus and any fruit that could use some
+                  ripening, plus garlic, ginger, potatoes, onions, winter squash, zucchini, eggplant, and tomatoes. 7.
+                  Don’t crowd your crops Make sure produce has room to “breathe” if it’s stored in a bag. If you cram
+                  too many items into a bag, more moisture builds up, more bruising happens, and the produce will spoil
+                  more quickly. 8. The humidity factor: A detour into the crisper drawer In general, vegetables last
+                  longer in a more humid environment, while fruits prefer a slightly less humid environment. So store
+                  fresh vegetables separately from fresh fruit when you can. The typical crisper drawer is nothing more
+                  than a partition inside your refrigerator that offers a more humid environment than the rest of the
+                  interior. Some crispers have a sliding humidity control setting that ranges from low to high.
+                  Sometimes they’re labeled “vegetables” (high) and “fruit” (lower than the veggie crisper but still
+                  higher than the rest of the fridge). But of course, the real world isn’t as simple as these low-tech
+                  sliders, which usually just open or close a little vent in the drawer that allows moisture and
+                  ethylene gas to escape. The complicating factor is that ethylene gas. The “How to Store Fresh
+                  Vegetables & Fruits” CHEAT SHEET: Store each item in its happy place GET YOUR RED HOT PRINTABLE PDF
+                  DOWNLOAD OF OUR HANDY DANDY CHEAT SHEET RIGHT HERE! Should it go on a shelf in the fridge? Or in one
+                  of the fridge’s crisper drawers? In a cool, dark pantry? (The fridge tends to dry bread out.) Defrost
+                  slices on the counter or briefly in the toaster and they’ll still be moist. BROCCOLI: Place in a
+                  plastic bag in the vegetable crisper. Eat quickly; broccoli is surprisingly delicate. BRUSSELS
+                  SPROUTS: Quite resilient! You can store them on or off the stalk in the vegetable crisper. If you cut
+                  them off the stalk, leave all the outer leaves intact for an extra layer of protection and seal them
+                  in a bag. When it’s time to cook them, remove any leaves that don’t look good. CABBAGE: Store in a
+                  plastic bag in the vegetable crisper and it will last for weeks. CANTALOUPE: Can be stored on the
+                  counter or in the pantry or on a shelf in the fridge. CARROTS: Remove any greens and store them
+                  separately like other greens. Wra…</p>
+              </div>
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <div class="blogDetails__content-tags"><span class="tags__title">Tags : </span><a class="tags__item"
+                      href="#">food,</a><a class="tags__item" href="#">healthy,</a><a class="tags__item"
+                      href="#">heart</a></div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="blogDetails__content-categories"><span class="categories__title">categories : <a
+                        href="#">News</a></span></div>
+                </div>
+              </div>
+            </div>
+            <div class="blogDetails__button">
+              <div class="row">
+                <div class="col-6"><a href="#">Previous Post</a></div>
+                <div class="col-6 d-flex align-items-center justify-content-end"><a href="#">Next Post</a></div>
+              </div>
+            </div>
+            <div class="blogDetails__comment">
+              <div class="blogDetails__comment-title">Leave A Comments</div>
+              <form class="blogDetails__comment-form">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form__name">
+                      <input type="text" name="name" placeholder="User name*" value required>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form__email">
+                      <input type="email" name="email" placeholder="Email*" value required>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form__message">
+                      <textarea name="message" placeholder="Your comment*" rows="5" cols="30" required></textarea>
+                    </div>
+                  </div>
+                </div>
+                <div class="form__submit btn btn-color">
+                  <input type="submit" value="Submit">
+                </div>
+              </form>
+            </div>
+            <div class="blogDetails__related">
+              <div class="blogDetails__related-title">Related post</div>
+              <div class="owl-blogDetails owl-carousel owl-theme">
+                <div class="blog__item animate__animated animate__zoomIn wow" data-wow-delay="0.5s">
+                  <div class="blog__item-image"><a href="blog-details.html"><img src="images/blog/blog-6.webp"></a>
+                    <div class="image__date"><span class="date">15</span><span class="month">Jun</span></div>
+                  </div>
+                  <div class="blog__item-info">
+                    <div class="info__subtitle">News</div>
+                    <div class="info__title"><a href="blog-details.html"
+                        title="Easy meal: Greek salad &amp; empanadas"><span>Easy meal: Greek salad &amp;
+                          empanadas</span></a></div>
+                    <div class="info__text"></div><a class="info__readmore" href="blog-details.html"><span>Read
+                        More</span></a>
+                  </div>
+                </div>
+                <div class="blog__item animate__animated animate__zoomIn wow" data-wow-delay="0.5s">
+                  <div class="blog__item-image"><a href="blog-details.html"><img src="images/blog/blog-8.webp"></a>
+                    <div class="image__date"><span class="date">15</span><span class="month">Jun</span></div>
+                  </div>
+                  <div class="blog__item-info">
+                    <div class="info__subtitle">News</div>
+                    <div class="info__title"><a href="blog-details.html"
+                        title="Easy meal: Greek salad &amp; empanadas"><span>Easy meal: Greek salad &amp;
+                          empanadas</span></a></div>
+                    <div class="info__text"></div><a class="info__readmore" href="blog-details.html"><span>Read
+                        More</span></a>
+                  </div>
+                </div>
+                <div class="blog__item animate__animated animate__zoomIn wow" data-wow-delay="0.5s">
+                  <div class="blog__item-image"><a href="blog-details.html"><img src="images/blog/blog-3.webp"></a>
+                    <div class="image__date"><span class="date">15</span><span class="month">Jun</span></div>
+                  </div>
+                  <div class="blog__item-info">
+                    <div class="info__subtitle">News</div>
+                    <div class="info__title"><a href="blog-details.html"
+                        title="Easy meal: Greek salad &amp; empanadas"><span>Easy meal: Greek salad &amp;
+                          empanadas</span></a></div>
+                    <div class="info__text"></div><a class="info__readmore" href="blog-details.html"><span>Read
+                        More</span></a>
+                  </div>
+                </div>
+                <div class="blog__item animate__animated animate__zoomIn wow" data-wow-delay="0.5s">
+                  <div class="blog__item-image"><a href="blog-details.html"><img src="images/blog/blog-4.webp"></a>
+                    <div class="image__date"><span class="date">15</span><span class="month">Jun</span></div>
+                  </div>
+                  <div class="blog__item-info">
+                    <div class="info__subtitle">News</div>
+                    <div class="info__title"><a href="blog-details.html"
+                        title="Easy meal: Greek salad &amp; empanadas"><span>Easy meal: Greek salad &amp;
+                          empanadas</span></a></div>
+                    <div class="info__text"></div><a class="info__readmore" href="blog-details.html"><span>Read
+                        More</span></a>
+                  </div>
+                </div>
+                <div class="blog__item animate__animated animate__zoomIn wow" data-wow-delay="0.5s">
+                  <div class="blog__item-image"><a href="blog-details.html"><img src="images/blog/blog-7.webp"></a>
+                    <div class="image__date"><span class="date">15</span><span class="month">Jun</span></div>
+                  </div>
+                  <div class="blog__item-info">
+                    <div class="info__subtitle">News</div>
+                    <div class="info__title"><a href="blog-details.html"
+                        title="Easy meal: Greek salad &amp; empanadas"><span>Easy meal: Greek salad &amp;
+                          empanadas</span></a></div>
+                    <div class="info__text"></div><a class="info__readmore" href="blog-details.html"><span>Read
+                        More</span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-xl-3">
+            <div class="blog__sidebar animate__animated animate__fadeInRight wow" data-wow-delay="1s">
+              <div class="blog__sidebar-search">
+                <div class="search__title">Search</div>
+                <form action="">
+                  <input type="text" name="q" value placeholder="Search...">
+                  <button type="submit"><i class="fal fa-search"></i></button>
+                </form>
+              </div>
+              <div class="blog__sidebar-cate">
+                <div class="cate__title">Categories</div>
+                <div class="cate__content">
+                  <ul class="cate__content-list">
+                    <li class="list__item"><a class="list__item-link text-capitalize" href="#">Prepared Vegetables</a>
+                    </li>
+                    <li class="list__item"><a class="list__item-link text-capitalize" href="#">Aubergine, Courgette &
+                        Squash</a></li>
+                    <li class="list__item"><a class="list__item-link text-capitalize" href="#">Carrots, Parsnips & Root
+                        Vegetables</a></li>
+                    <li class="list__item"><a class="list__item-link text-capitalize" href="#">Salad Bags & Bowls</a>
+                    </li>
+                    <li class="list__item"><a class="list__item-link text-capitalize" href="#">Cabbage, Spinach &
+                        Greens</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="blog__sidebar-recent">
+                <div class="recent__title">RECENT POSTS</div>
+                <div class="recent__post">
+                  <div class="recent__post-item">
+                    <div class="item__image"><a href="#"><img src="images/blog/blog-5.webp" alt=""></a></div>
+                    <div class="item__info">
+                      <div class="item__info-date">15.June.2020</div><a class="item__info-title">Local food takes the
+                        guilt out of guilty pleasures</a>
+                      <div class="item__info-comment">0 Comments</div>
+                    </div>
+                  </div>
+                  <div class="recent__post-item">
+                    <div class="item__image"><a href="#"><img src="images/blog/blog-6.webp" alt=""></a></div>
+                    <div class="item__info">
+                      <div class="item__info-date">15.June.2020</div><a class="item__info-title">Local food takes the
+                        guilt out of guilty pleasures</a>
+                      <div class="item__info-comment">0 Comments</div>
+                    </div>
+                  </div>
+                  <div class="recent__post-item">
+                    <div class="item__image"><a href="#"><img src="images/blog/blog-4.webp" alt=""></a></div>
+                    <div class="item__info">
+                      <div class="item__info-date">15.June.2020</div><a class="item__info-title">Local food takes the
+                        guilt out of guilty pleasures</a>
+                      <div class="item__info-comment">0 Comments</div>
+                    </div>
+                  </div>
+                  <div class="recent__post-item">
+                    <div class="item__image"><a href="#"><img src="images/blog/blog-3.webp" alt=""></a></div>
+                    <div class="item__info">
+                      <div class="item__info-date">15.June.2020</div><a class="item__info-title">Local food takes the
+                        guilt out of guilty pleasures</a>
+                      <div class="item__info-comment">0 Comments</div>
+                    </div>
+                  </div>
+                  <div class="recent__post-item">
+                    <div class="item__image"><a href="#"><img src="images/blog/blog-7.webp" alt=""></a></div>
+                    <div class="item__info">
+                      <div class="item__info-date">15.June.2020</div><a class="item__info-title">Local food takes the
+                        guilt out of guilty pleasures</a>
+                      <div class="item__info-comment">0 Comments</div>
+                    </div>
+                  </div>
+                  <div class="recent__post-item">
+                    <div class="item__image"><a href="#"><img src="images/blog/blog-8.webp" alt=""></a></div>
+                    <div class="item__info">
+                      <div class="item__info-date">15.June.2020</div><a class="item__info-title">Local food takes the
+                        guilt out of guilty pleasures</a>
+                      <div class="item__info-comment">0 Comments</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="blog__sidebar-tags">
+                <div class="tags__title">Tags</div>
+                <ul class="tags__list">
+                  <li class="tags__list-item"><a href="#">food</a></li>
+                  <li class="tags__list-item"><a href="#">fresh</a></li>
+                  <li class="tags__list-item"><a href="#">fruits</a></li>
+                  <li class="tags__list-item"><a href="#">healthy</a></li>
+                  <li class="tags__list-item"><a href="#">heart</a></li>
+                  <li class="tags__list-item"><a href="#">meal</a></li>
+                  <li class="tags__list-item"><a href="#">salad</a></li>
+                  <li class="tags__list-item"><a href="#">tip</a></li>
+                  <li class="tags__list-item"><a href="#">vegetable</a></li>
+                  <li class="tags__list-item"><a href="#">vegetables</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Blog Details-->
+    <!-- Start Footer-->
+    <div class="footer">
+      <div class="footerTop">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="footerTop__logo animate__animated animate__fadeInLeft wow" data-wow-delay="0.5s">
+                <div class="footerTop__logo-image"><img src="images/layout/logo-white.png" alt=""></div>
+                <div class="footerTop__logo-text">At vero eos et accusam et justo duo dolo res et ea rebum. Stet clita
+                  kasd guber gren. Aenean sollici tudin lorem quis biben dum auci elit clita.</div>
+                <ul class="footerTop__logo-contact">
+                  <li class="contact__item">
+                    <div class="contact__item-icon"><i class="far fa-map-marker-alt"></i></div><a
+                      class="contact__item-text" href="#">Address: 339 Riverside Drive, New York NY 10027, United
+                      States</a>
+                  </li>
+                  <li class="contact__item">
+                    <div class="contact__item-icon"><i class="far fa-phone"></i></div><a class="contact__item-text"
+                      href="#">Phone:<span> +1 (212) 379 3968</span></a>
+                  </li>
+                  <li class="contact__item">
+                    <div class="contact__item-icon"><i class="far fa-envelope"></i></div><a class="contact__item-text"
+                      href="#">Email: balan@construction.com</a>
+                  </li>
+                </ul>
+                <div class="footerTop__logo-icon"><a class="icon__link" href="#"><i class="fab fa-instagram"></i></a><a
+                    class="icon__link" href="#"><i class="fab fa-twitter"></i></a><a class="icon__link" href="#"><i
+                      class="fab fa-facebook-f"></i></a><a class="icon__link" href="#"><i
+                      class="fab fa-tumblr"></i></a><a class="icon__link" href="#"><i class="fab fa-vimeo-v"></i></a><a
+                    class="icon__link" href="#"><i class="fab fa-linkedin-in"></i></a></div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="footerTop__post d-none-block animate__animated animate__fadeInUp wow" data-wow-delay="1s">
+                <div class="footerTop__post-title">Recent Posts</div>
+                <ul class="footerTop__post-list">
+                  <li class="list__item">
+                    <div class="list__item-image"><img src="images/layout/footer-1.jpg" alt=""></div>
+                    <div class="list__item-content"><a class="content__title" href="blog-details.html">US construction
+                        spending lowest in three years</a>
+                      <div class="content__date">November 14, 2019</div>
+                    </div>
+                  </li>
+                  <li class="list__item">
+                    <div class="list__item-image"><img src="images/layout/footer-2.jpg" alt=""></div>
+                    <div class="list__item-content"><a class="content__title" href="blog-details.html">US construction
+                        spending lowest in three years</a>
+                      <div class="content__date">October 13, 2019</div>
+                    </div>
+                  </li>
+                  <li class="list__item">
+                    <div class="list__item-image"><img src="images/layout/footer-3.jpg" alt=""></div>
+                    <div class="list__item-content"><a class="content__title" href="blog-details.html">US construction
+                        spending lowest in three years</a>
+                      <div class="content__date">September 12, 2019</div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="footerTop__quote animate__animated animate__fadeInRight wow" data-wow-delay="1.5s">
+                <div class="footerTop__quote-title">Get A quote</div>
+                <div class="footerTop__quote-text">If you got any question please do not hisitate to send us a message.
+                </div>
+                <div class="row">
+                  <div class="col-6">
+                    <div class="footerTop__quote-form">
+                      <input class="form-control" id="name" type="text" placeholder="Your Name">
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="footerTop__quote-form">
+                      <input class="form-control" id="email" type="email" placeholder="Your Email">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <div class="footerTop__quote-form footerTop__quote-textarea">
+                      <textarea class="form-control" id="message" type="message" placeholder="Message..."></textarea>
+                    </div>
+                  </div>
+                </div><a class="btn btn-transparent" href="#">Send Message</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footerBottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-lg-8 mx-auto">
+              <div class="footerBottom__content animate__animated animate__zoomIn wow" data-wow-delay="1s">Copyright
+                2020 @ Superfood Elated Themes</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Footer-->
+    <!-- Start Modal-->
+    <div class="modal">
+      <div class="modal__content">
+        <button class="close-modal"><i class="fal fa-times"></i></button>
+        <div class="modal__content-caption">
+          <div class="modal__content-caption__search">
+            <input class="caption__text" type="text" placeholder="Search..." autofocus="">
+            <button class="caption__icon"><i class="far fa-search"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Modal-->
+    <!-- Start Back-to-top-->
+    <div class="back-to-top" id="back-to-top"><a href="#"><i class="fal fa-arrow-up"></i></a></div>
+    <!-- End Back-to-top-->
+  </div>
+</body>
+<!-- Jquery-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Bootstrap JS-->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- Owl Carousel-->
+<script src="js/owl.carousel.min.js"></script>
+<!-- Fancy Box-->
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<!-- Wow JS-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<!-- Main JS-->
+<script src="js/main.js"></script>
+
+</html>
